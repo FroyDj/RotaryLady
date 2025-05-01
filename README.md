@@ -41,10 +41,7 @@ Here's a video on YouTube that visualizes the concept:
   <img src="blink.gif" alt="Demo GIF" width="800">
 </p>
 
-The example image is a cropped and downscaled version of a photograph by Yaroslav Shuraev.  
-The original image is titled *"Маяк Анива"* and depicts the Aniva Lighthouse in Sakhalin, Russia.  
-It is licensed under the [Creative Commons Attribution-Share Alike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/deed.en).  
-You can view the original image on [Wikimedia](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%8F%D0%BA_%D0%90%D0%BD%D0%B8%D0%B2%D0%B0.jpg).  
+The example image is a cropped and downscaled version of a photograph by Yaroslav Shuraev. The original image is titled *"Маяк Анива"* and depicts the Aniva Lighthouse in Sakhalin, Russia. It is licensed under the [Creative Commons Attribution-Share Alike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/deed.en). You can view the original image on [Wikimedia](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%8F%D0%BA_%D0%90%D0%BD%D0%B8%D0%B2%D0%B0.jpg).  
 This example image is provided solely for demonstration purposes within the scope of this software project and does not constitute a redistribution of the original work.
 
 ## Licence
