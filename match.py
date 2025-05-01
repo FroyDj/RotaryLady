@@ -7,10 +7,10 @@ import multiprocessing.sharedctypes
 import speedup
 import param
 
-param.pixel_positions			= np.load("pixel_positions" )
-param.pixel_weights				= np.load("pixel_weights")
-param.triagle_start_positions	= np.load("triagle_start_positions") 
-param.triangle_pixel_counts		= np.load("triangle_pixel_counts")
+param.pixel_positions          = np.load("pixel_positions" )
+param.pixel_weights            = np.load("pixel_weights")
+param.triagle_start_positions  = np.load("triagle_start_positions") 
+param.triangle_pixel_counts    = np.load("triangle_pixel_counts")
 
 img			= cv2.imread(param.IMAGE)
 
