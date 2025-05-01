@@ -1,4 +1,4 @@
-#RotaryLady (Rotary Laser Display)
+# RotaryLady (Rotary Laser Display)
 
 Simulates brightness-modulated rotating laser beams for screenless image rendering via scattering.
 
@@ -17,6 +17,7 @@ Here's a video on YouTube that visualizes the concept:
   <br>
   <sub>'Laser Scattering Rendering - a Photorealistic Mid-Air Display (Simulation)' by dropped_box</sub>
 </p>
+
 ## Usage Linux (only manually)
 
 -   Make sure the required Python packages are installed: `numpy`, `cython`, `opencv` and `multiprocessing`
