@@ -60,12 +60,12 @@ def get_pixelatet_count_all(fans_triangles_int_shift_10):
 def create_files(fans_triangles_int_shift_10, total_pixels_count):
 	print("calculating pixels")
 	print("==================")
-	param.pixel_positions 		= np.empty([total_pixels_count], dtype =  np.uint32)
-	param.pixel_weights			= np.empty([total_pixels_count], dtype =  np.float32)
-	param.triagle_start_positions = np.empty([param.RESOLUTION * param.LASERCOUNT], dtype = np.uint32)
-	param.triangle_pixel_counts   = np.empty([param.RESOLUTION * param.LASERCOUNT], dtype = np.uint32)
+	param.pixel_positions		= np.empty([total_pixels_count], dtype =  np.uint32)
+	param.pixel_weights		= np.empty([total_pixels_count], dtype =  np.float32)
+	param.triagle_start_positions	= np.empty([param.RESOLUTION * param.LASERCOUNT], dtype = np.uint32)
+	param.triangle_pixel_counts	= np.empty([param.RESOLUTION * param.LASERCOUNT], dtype = np.uint32)
 	param.triangle_img_deck		= np.zeros([param.RESOLUTION, param.IMG_WIDTH, param.IMG_HEIGHT], dtype =  np.uint8)
-	param.triangle_img_deck_ravel = param.triangle_img_deck.ravel(order='C')
+	param.triangle_img_deck_ravel	= param.triangle_img_deck.ravel(order='C')
 	param.circle_mask = circular_mask(param.IMG_HEIGHT, param.IMG_WIDTH, param.CENTER_X, param.CENTER_Y, param.RADIUS_VIEW_MASK).flatten()
 	
 	total_pixels_index = 0
