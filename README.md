@@ -23,7 +23,7 @@ Here's a video on YouTube that visualizes the concept:
 -   Make sure the required Python packages are installed: `numpy`, `cython`, `opencv` and `multiprocessing`
 -   Run `cython speedup.pyx` to generate the corresponding C file
 -   Compile the C code. On the test system, `gcc` was used with the following command: `gcc -shared -pthread -fPIC -fwrapv -O2 -Wall -fno-strict-aliasing -I/usr/include/python3.9 -o speedup.so speedup.c`
--	  Adjust the parameters in `param.py` (optional)
+-	  Adjust the parameters in `param.py`
 -   Run `python3 init.py`. This creates 4 files based on the current parameters. With the default parameters, these files total about 1.7 GB
 -   Run `python3 match.py`. This reads the source image, renders the output image and saves the result to disk.
 
