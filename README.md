@@ -56,3 +56,7 @@ It is licensed under the [Creative Commons Attribution-Share Alike 4.0 Internati
 You can view the original image on [Wikimedia](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%8F%D0%BA_%D0%90%D0%BD%D0%B8%D0%B2%D0%B0.jpg).  
 This example image is provided solely for demonstration purposes within the scope of this software project and does not constitute a redistribution of the original work.
 
+## Example Image
+
+MIT
+
