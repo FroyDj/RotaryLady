@@ -3,7 +3,7 @@ Simulates brightness-modulated rotating laser beams for screenless image renderi
 
 ## Description
 This software tests how well an image can be rendered using a laser scattering display — a kind of display that doesn’t need a physical screen. Instead, it relies on light scattering off particles like dust in the air.
-In the simulation, red, green, and blue lasers are arranged around a circular display area. Each laser rotates in the display plane and its brightness is adjusted repeatedly as it sweeps across the display area. The resulting dynamic laser beams overlap in mid-air, creating scattering patterns that in sum reproduce the source image as closely as possible.
+In the simulation, red, green, and blue lasers are arranged around a circular display area. Each laser rotates in the display plane and its brightness is adjusted repeatedly as it sweeps across the display area. The resulting dynamic laser beams overlap, creating scattering patterns that in sum reproduce the source image as closely as possible.
 
 Here's a video on YouTube that visualizes the concept:
 <p align="left">
